@@ -1003,8 +1003,59 @@ header.main > :last-child {
   margin: 0 0 1em 0; }
 
 /* Form */
+
 form {
   margin: 0 0 2em 0; }
+.SearchFind {
+  border-radius: 5px;
+  border: 2px;
+  border-style: solid;
+  border-color:#f56a6a;
+padding: 30px;}
+
+.formsf {
+
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    
+}
+  h2{
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+}
+
+  #submit-button:hover{
+    cursor: pointer;
+  }
+  #img-button:hover{
+    cursor: pointer;
+  
+  }
+  @media (max-width:480px) {
+    form{
+      width: 100%;
+    }
+  }
+
+
 
 label {
   color: #3d4449;
@@ -2268,4 +2319,4 @@ button,
     margin-top: 0;
     padding-top: 0; }
     
-    
+  
