@@ -1006,7 +1006,9 @@ header.main > :last-child {
 
 form {
   margin: 0 0 2em 0; }
+
 .SearchFind {
+  padding: 5px;
   border-radius: 5px;
   border: 2px;
   border-style: solid;
@@ -1023,6 +1025,7 @@ padding: 30px;}
     border-radius: 7px;
     
 }
+
   h2{
   text-align: center;
   margin: 0;

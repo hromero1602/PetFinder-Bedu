@@ -8,6 +8,8 @@
 	<head>
 		<title></title>
 		<meta charset="utf-8" />
+		<script src="index-db.js"></script>
+		<script src="index.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
@@ -35,26 +37,65 @@
 
 							<!-- Content -->
 								<section class="formsf">
-									<form class="SearchFind" action="">
+									<form class="SearchFind" id="formulario" action="">
 
-									<h2>Ayudalo a regresar a casa</h2>
-                                        <label id="UpImg" for="Image">Suba una foto de la mascota</label>
-                                        <input type="file" id="img-button" name="Upload-image" id="Up-img">
-                                        <label for="Breed">Raza</label>
-                                        <input type="text" name="Race" placeholder="Salchica">
-                                        <label for="Name"> Nombre (En caso de traer collar).</label>
-                                        <input type="text" name="Name" placeholder="Pumba">
+									<h2>AYUDALO A REGRESAR A CASA</h2>
+									<div>
+										<label for="">Tipo de mascota</label>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+											<label class="form-check-label" for="inlineRadio1">Perro</label>
+										  </div>
+										  <div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											<label class="form-check-label" for="inlineRadio2">Gato</label>
+										  </div>
+									</div>
+                                       <label id="UpImg" for="Image">Sube una foto de la mascota</label>
+										<input type="file" id="img-button" name="Upload-image" id="Up-img">
+										<div class="col-breed-opt">
+											<label for="inputBreed" class="form-breed">Raza</label>
+											<select id="inputBreed" class="form-breed">
+												<option selected>Choose...</option>
+												<option>Salchicha</option>
+												<option>Pastor</option>
+												<option>Bulldog</option>
+												<option>Chihuahua</option>
+												<option>...</option>
+											</select>
+										  </div>
+                                        <label for="Name"> Nombre (En caso de traer collar)</label>
+										<input type="text" name="Name" placeholder="Pumba">
+
+										<label for="PetSize" class="form-breed">Tamaño</label>
+										<select id="PetsizeInput" class="form-breed">
+											<option selected>Choose...</option>
+											<option>Pequeño</option>
+											<option>Mediano</option>
+											<option>Grande</option>
+											</select>
+
                                         <label for="Color"> Color</label>
-                                        <input type="text" name="Color" placeholder="Negro" >
-                                        <label for="Lost zone">Zona de localizacion</label>
-                                        <input type="text" name="Zone" placeholder="Zone">
+										<input type="text" name="Color" placeholder="Negro" >
+										<div class="col-zone-opt">
+											<label for="inputZzone" class="form-zone">Zona de localización</label>
+											<select id="inputZone" class="form-select">
+											  <option selected>Choose...</option>
+											  <option>Alvaro Obregón</option>
+											  <option>Azcapotzalco</option>
+											  <option>Miguel Hidalgo</option>
+											  <option>Venustiano Carranza</option>
+											  <option>Xochimilco</option>
+											</select>
+										  </div>
                                         <label for="Special features">Características especiales</label>
                                         <textarea name="Features" placeholder="Special features"></textarea>
 										<input type="button" value="Subir informacion" id="submit-button">
 									</form>
+									<h1>En espera de ser encontrados</h1>
+									<div id="resultados"></div>
 								
-								</section>
-
+								</section>Zona
 						</div>
 					</div>
 
